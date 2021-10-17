@@ -1,7 +1,7 @@
 create database hospital
 use hospital
 -- Table Create
-CREATE TABLE patient (
+CREATE TABLE patients (
   Customer_Name varchar(255) NOT NULL,
   Customer_Id int NOT NULL,  
   Open_Date date NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE patient (
   )
 
   --1st time insert
-  insert into patient (Customer_Name,Customer_Id,Open_Date,Last_Consulted_Date,Vaccination_type,Dr_Name,State,Country,DOB,Active)
+  insert into patients (Customer_Name,Customer_Id,Open_Date,Last_Consulted_Date,Vaccination_type,Dr_Name,State,Country,DOB,Active)
   values('Alex',1,'2015-01-15','2015-01-21','MVX','Paul','SA','USA','1998-02-04','Yes'),
 ('John',2,'2015-09-06','2015-09-11','MCV','Paul','CA','USA','1999-06-06','Yes'),
 ('Sumith',3,'2016-11-23','2016-11-29','MVX','Reddy','KA','IND','1998-08-16','Yes'),
